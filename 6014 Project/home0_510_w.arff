@@ -1,0 +1,523 @@
+@relation 'home0_510-weka.filters.unsupervised.attribute.Remove-R1-2,4-8-weka.filters.unsupervised.attribute.Remove-R4-weka.filters.unsupervised.attribute.Remove-R10-12,14-15-weka.filters.unsupervised.attribute.Remove-R12-13-weka.filters.unsupervised.attribute.Remove-R13-weka.filters.unsupervised.attribute.Remove-R6-weka.filters.unsupervised.attribute.Remove-R6-weka.filters.unsupervised.attribute.Remove-R9'
+
+@attribute price numeric
+@attribute totalbedrooms numeric
+@attribute bathrooms numeric
+@attribute BuildingType {'Row / Townhouse',Apartment,House,'Mobile Home',Duplex}
+@attribute storeys numeric
+@attribute landSize {'under 1/2 acre','1/2 - 1 acre','1 - 3 acres','3 - 10 acres',Unknown,'10 - 49 acres','100+ acres','50 - 100 acres'}
+@attribute Builtin numeric
+@attribute totalFinishedArea numeric
+@attribute po3 {B2W,B0P,B4A,B0J,B2H,B3N,B3Z,B3R,B3G,B4V,B3A,B0S,B0E,B4C,B4N,B3H,B2R,B3K,B3P,B2X,B2T,B4E,B3M,B2V,B0N,B2G,B0K,B0M,B4P,B0T,B0R,B9A,B4B,B2Y,A1A,B3V,B4G,B2N,B3T,B2S,B3E,B3L,B2Z,B6L,B0H,B4R,B3W,B3J}
+
+@data
+399900,3,3,'Row / Townhouse',2,'under 1/2 acre',2010,1815,B2W
+329900,2,1,Apartment,1,'under 1/2 acre',2012,986,B2W
+165000,4,2,House,2,'under 1/2 acre',1995,1400,B0P
+339000,3,2,House,2,'under 1/2 acre',1980,1470,B4A
+750000,4,3,House,2,'under 1/2 acre',2020,3120,B0J
+214500,3,2,House,2,'under 1/2 acre',?,1199,B2H
+290000,5,2,House,1,'1/2 - 1 acre',1986,1521,B2H
+59900,3,1,House,2,'1 - 3 acres',?,1568,B0J
+434900,2,2,Apartment,1,'under 1/2 acre',?,1326,B3N
+450000,3,1,House,2,'1/2 - 1 acre',1962,1640,B0J
+419900,3,3,House,1,'under 1/2 acre',2007,2700,B2H
+775000,4,4,House,2,'1/2 - 1 acre',?,2900,B3Z
+819900,4,4,House,2,'under 1/2 acre',2005,3116,B4A
+345000,3,1,House,1,'under 1/2 acre',1982,1653,B3R
+279900,3,2,House,1,'under 1/2 acre',2002,1440,B3G
+329900,2,1,House,1,'1 - 3 acres',2002,1060,B4V
+279000,2,1,House,1,'under 1/2 acre',?,815,B3A
+185000,2,1,House,2,'under 1/2 acre',1932,920,B0S
+139900,2,1,'Mobile Home',1,'under 1/2 acre',?,704,B0E
+299900,3,2,House,1,'under 1/2 acre',1971,1483,B2H
+489900,4,4,House,2,'under 1/2 acre',2018,2261,B3R
+425000,4,3,House,2,'under 1/2 acre',1993,2000,B3N
+549900,4,4,House,2,'under 1/2 acre',?,2204,B3R
+279900,3,2,House,1,'under 1/2 acre',?,1048,B4C
+359900,3,2,House,1,'1/2 - 1 acre',1983,2460,B0J
+525000,4,4,House,2,'1 - 3 acres',1990,3681,B4N
+349900,4,3,House,2,'under 1/2 acre',?,1934,B0P
+375000,3,2,Apartment,1,'under 1/2 acre',?,1300,B3H
+595000,3,2,House,2,'1/2 - 1 acre',1999,1741,B2R
+374900,4,2,House,1,'under 1/2 acre',1993,2400,B0S
+249900,3,2,House,2,'under 1/2 acre',1983,1794,B2W
+650000,5,2,Duplex,2,'under 1/2 acre',1922,2393,B3K
+949900,2,2,House,2,'under 1/2 acre',1951,2357,B3P
+380000,5,3,House,1,'1/2 - 1 acre',1994,2430,B0P
+324900,3,3,House,2,'under 1/2 acre',?,2496,B2H
+525000,3,2,House,3,'under 1/2 acre',1980,2402,B2X
+450000,3,2,House,1,'under 1/2 acre',1986,1996,B2X
+399900,6,2,Duplex,2,'under 1/2 acre',?,2390,B3N
+350000,3,4,House,2,'under 1/2 acre',2020,1886,B2T
+329000,4,2,House,1,'under 1/2 acre',1964,1810,B4C
+439900,4,3,House,2,'under 1/2 acre',2005,2189,B4E
+294900,2,2,Apartment,1,'under 1/2 acre',1986,1033,B3M
+599900,5,4,House,2,'under 1/2 acre',2003,3100,B4A
+489900,3,1,House,1,'under 1/2 acre',1991,1834,B2V
+349000,3,2,Apartment,3,'under 1/2 acre',1919,1029,B3H
+399900,2,1,House,2,'under 1/2 acre',1960,1050,B3G
+499900,3,4,House,2,'under 1/2 acre',2012,1937,B3R
+379000,3,3,House,1,'1 - 3 acres',?,2528,B0N
+399000,4,1,House,1,'1 - 3 acres',?,1159,B2G
+189000,3,2,'Mobile Home',1,'3 - 10 acres',2019,1088,B0K
+649999,6,3,House,3,'1 - 3 acres',?,3820,B0S
+240000,3,2,House,1,'1/2 - 1 acre',1996,1753,B0P
+239000,3,1,House,1,'under 1/2 acre',1950,768,B0M
+599900,3,2,House,1,'3 - 10 acres',2019,1924,B0J
+399000,4,2,House,2,'under 1/2 acre',2009,1552,B3P
+289900,3,2,House,2,'under 1/2 acre',1991,1244,B3G
+249900,2,1,Apartment,1,?,1988,937,B3M
+299900,2,2,House,2,'under 1/2 acre',1873,3650,B0P
+649900,3,3,House,1,'3 - 10 acres',2021,2700,B2T
+425000,7,2,House,2,'under 1/2 acre',1957,2020,B4P
+759900,4,4,House,2,'under 1/2 acre',1989,3745,B2V
+499000,3,2,House,2,'3 - 10 acres',1880,2288,B0T
+149999,1,1,House,1,'3 - 10 acres',1995,760,B0R
+529900,3,2,House,1,'3 - 10 acres',2019,1569,B0J
+2150000,3,2,House,2,'1 - 3 acres',?,2774,B0J
+2585000,3,3,House,2,'1 - 3 acres',?,3019,B0J
+1752500,4,3,House,2,'1 - 3 acres',?,2348,B0J
+2265000,3,2,House,2,'1 - 3 acres',?,2774,B0J
+2345000,3,3,House,2,'1 - 3 acres',?,3019,B0J
+1635000,4,3,House,2,'1 - 3 acres',?,2348,B0J
+2525000,3,3,House,2,'1 - 3 acres',?,3019,B0J
+209000,3,2,House,2,'1/2 - 1 acre',1920,1368,B9A
+1199900,4,3,House,2,'under 1/2 acre',?,2686,B3H
+189900,6,3,Duplex,2,Unknown,?,2371,B0K
+195000,3,1,House,2,'under 1/2 acre',1952,1200,B4N
+1695000,3,3,House,1,'1 - 3 acres',?,2508,B0J
+719900,2,2,Apartment,1,'under 1/2 acre',?,877,B3K
+425000,3,2,House,1,'1 - 3 acres',1991,1568,B4C
+419900,2,1,Apartment,1,?,1902,1150,B3H
+389900,3,2,House,1,'1 - 3 acres',1960,1475,B2V
+319000,4,2,House,1,'under 1/2 acre',1978,2000,B4E
+699900,4,4,House,2,'1 - 3 acres',2021,2352,B4B
+469000,4,2,House,1,'under 1/2 acre',1983,2100,B4C
+309900,3,2,House,1,'under 1/2 acre',1993,1340,B4C
+509900,3,2,Apartment,1,'under 1/2 acre',2003,1632,B3M
+484500,3,3,House,2,'under 1/2 acre',2007,2760,B2H
+500000,3,4,House,2,'1 - 3 acres',2002,2430,B4B
+467000,2,2,Apartment,1,'under 1/2 acre',1990,1084,B3N
+349900,3,2,House,2,'under 1/2 acre',?,1572,B2Y
+499000,2,1,House,1,'3 - 10 acres',1989,980,B0J
+599000,3,2,House,2,'under 1/2 acre',1880,1667,B0J
+999000,3,3,'Row / Townhouse',2,?,1999,2065,B3N
+699900,3,2,House,2,'1 - 3 acres',2007,1604,B0J
+437000,3,2,House,2,'10 - 49 acres',1989,2208,B0P
+129900,1,1,House,1,'1 - 3 acres',?,632,B0P
+324900,1,1,House,1,'10 - 49 acres',?,720,B0N
+229000,3,2,House,2,'under 1/2 acre',?,1352,B2H
+350000,6,2,House,2,'under 1/2 acre',?,2156,B0P
+485000,4,2,House,1,'under 1/2 acre',2018,1950,B0P
+729900,6,4,House,2,'under 1/2 acre',2002,5400,B2W
+279900,3,1,House,1,'1/2 - 1 acre',1978,1560,B3Z
+159900,2,1,'Mobile Home',1,?,1997,976,B4V
+469000,4,3,House,3,'1/2 - 1 acre',1871,2787,B0J
+799900,8,8,House,3,'under 1/2 acre',1895,4116,B0T
+499900,4,2,House,1,'under 1/2 acre',1977,1629,B4A
+355000,4,3,House,1,'under 1/2 acre',?,2092,B0P
+250000,4,1,House,1,'1 - 3 acres',1980,1230,B0N
+699900,4,3,House,1,'100+ acres',2006,2640,B0J
+224900,3,1,House,2,'under 1/2 acre',?,1450,B0N
+204900,3,1,House,1,'1 - 3 acres',1986,1676,B0N
+749900,4,2,House,2,'under 1/2 acre',1984,3600,B3M
+929000,4,4,House,2,'1/2 - 1 acre',2017,3208,B4B
+649900,6,2,Duplex,1,'under 1/2 acre',1992,2400,B4A
+1680000,3,3,House,2,'3 - 10 acres',2001,5028,B0J
+1398000,5,3,House,2,'under 1/2 acre',1936,3340,B3H
+599900,4,4,House,2,'under 1/2 acre',1945,3250,B3N
+765000,3,4,House,2,'under 1/2 acre',1970,2925,B3A
+379900,3,2,House,1,'under 1/2 acre',1976,1553,B4C
+499900,3,4,'Row / Townhouse',2,'under 1/2 acre',2015,1738,B4E
+489000,3,2,Duplex,2,'under 1/2 acre',1979,1730,B0J
+599900,3,2,House,1,'1 - 3 acres',2010,2133,B0R
+189900,4,1,House,2,'under 1/2 acre',?,1792,B0P
+399900,2,2,House,1,'1/2 - 1 acre',1952,851,B4A
+324900,2,2,House,1,'under 1/2 acre',2013,1049,B0P
+499900,4,4,House,2,'under 1/2 acre',1997,2168,B3M
+869900,4,2,House,2,'under 1/2 acre',1925,2262,B3H
+299900,3,1,House,2,'under 1/2 acre',?,1344,A1A
+446000,3,2,House,1,'1 - 3 acres',2019,1784,B3V
+525000,3,4,House,2,'1/2 - 1 acre',2005,2594,B4G
+639900,3,2,House,2,'1/2 - 1 acre',2001,3632,B0P
+750000,4,4,House,1,'under 1/2 acre',2014,2494,B3A
+244900,2,1,House,1,'under 1/2 acre',1963,1536,B2G
+89900,2,1,House,2,'under 1/2 acre',?,825,B2H
+790000,2,2,House,2,'10 - 49 acres',?,1780,B0T
+450000,4,2,House,2,'under 1/2 acre',1976,1982,B2V
+499900,3,3,House,2,'under 1/2 acre',1996,1902,B4A
+499900,3,2,House,1,'under 1/2 acre',1980,1795,B3Z
+798000,3,2,House,2,'50 - 100 acres',1922,1400,B0N
+599000,5,6,House,2,'under 1/2 acre',2007,4064,B0P
+320000,3,2,House,2,'under 1/2 acre',1955,1704,B2N
+749000,5,2,House,2,'under 1/2 acre',?,1500,B2Y
+519000,3,4,House,2,'1/2 - 1 acre',2008,2618,B3Z
+199900,3,2,House,2,'under 1/2 acre',?,1186,B4V
+839900,3,4,House,2,'under 1/2 acre',?,2319,B3T
+369900,3,2,House,1,'under 1/2 acre',1973,2050,B4C
+779000,4,4,House,2,'under 1/2 acre',2015,2892,B4B
+1285900,5,4,House,2,'1 - 3 acres',?,3879,B0N
+749000,4,4,House,2,'1 - 3 acres',2006,3845,B4B
+300000,3,3,'Row / Townhouse',2,'under 1/2 acre',1979,1798,B3M
+1200000,3,3,House,1,'1 - 3 acres',2011,3314,B0N
+475000,5,4,House,1,'under 1/2 acre',1975,2826,B3M
+350000,4,2,House,1,'under 1/2 acre',1988,2106,B0P
+729900,2,2,Apartment,1,'under 1/2 acre',2007,1281,B3K
+699900,4,3,House,3,'1 - 3 acres',2020,2717,B0J
+699000,3,2,House,2,'under 1/2 acre',?,2820,B4V
+1195000,5,3,House,3,'under 1/2 acre',1918,2682,B3H
+365000,3,2,House,1,'under 1/2 acre',?,1458,B3G
+499000,3,3,House,2,'1/2 - 1 acre',2011,1630,B0K
+699900,3,3,House,2,'1 - 3 acres',2004,1856,B4E
+800000,4,4,House,2,'1 - 3 acres',2010,3278,B2T
+700000,4,3,House,1,'1 - 3 acres',1999,3653,B2T
+475000,4,1,House,1,'under 1/2 acre',1979,2038,B2T
+849900,2,2,Apartment,1,'under 1/2 acre',2018,1425,B3H
+619000,2,1,House,1,'under 1/2 acre',1953,1592,B3N
+549900,3,4,House,2,'under 1/2 acre',2018,1905,B3P
+425000,4,3,House,1,'under 1/2 acre',1983,2289,B2V
+439000,3,1,House,2,'1/2 - 1 acre',1855,1371,B0J
+799900,4,4,House,2,'1/2 - 1 acre',2014,3500,B3Z
+525000,4,3,House,2,'1/2 - 1 acre',1974,2448,B0S
+489900,3,3,House,2,'1 - 3 acres',1996,1728,B4B
+169000,3,1,'Mobile Home',1,'under 1/2 acre',2006,896,B4C
+749900,4,3,House,2,'under 1/2 acre',1984,2741,B4A
+349900,2,2,'Row / Townhouse',1,'under 1/2 acre',2019,1050,B2N
+374900,5,2,House,1,'under 1/2 acre',2003,2362,B0P
+799000,4,4,House,2,'1 - 3 acres',2016,3494,B4E
+499900,4,4,House,2,'under 1/2 acre',2019,1957,B3P
+439000,3,2,House,2,'under 1/2 acre',1959,1582,B3A
+499000,2,2,Apartment,1,?,2003,1550,B3M
+479900,2,2,Apartment,2,?,2016,953,B3K
+399900,1,1,Apartment,1,'under 1/2 acre',1986,911,B2Y
+1060000,3,4,House,2,'under 1/2 acre',1993,3859,B2V
+349900,2,2,Apartment,1,Unknown,2010,1224,B3N
+958000,4,4,House,2,'under 1/2 acre',2009,4080,B3N
+224900,2,1,House,1,'under 1/2 acre',1962,664,B2Y
+349900,3,1,House,2,'under 1/2 acre',1957,1313,B2Y
+689000,3,2,House,1,'1/2 - 1 acre',2015,1992,B3Z
+399900,5,3,House,1,'under 1/2 acre',1996,2250,B4E
+1200000,6,4,House,2,'1 - 3 acres',1983,4065,B4C
+259900,3,1,House,2,'under 1/2 acre',1972,1403,B4C
+469900,2,3,House,1,'under 1/2 acre',2010,1864,B4E
+525000,3,2,House,2,'1 - 3 acres',?,1735,B0J
+345000,4,2,House,1,'under 1/2 acre',1999,2400,B2H
+230000,4,2,House,2,'1/2 - 1 acre',?,1500,B0K
+315000,3,3,House,2,'1 - 3 acres',2012,2400,B0P
+125000,4,2,House,2,'1/2 - 1 acre',1860,2084,B0M
+379900,3,2,House,1,'under 1/2 acre',1997,1872,B2S
+399900,4,3,House,2,'under 1/2 acre',1966,2853,B3T
+379000,4,2,House,2,'under 1/2 acre',?,2000,B0K
+479000,2,2,Apartment,1,?,2003,1215,B4A
+187900,2,1,House,1,?,2014,784,B2T
+350000,3,4,House,2,'under 1/2 acre',1922,4300,B0P
+149900,2,1,House,1,'1/2 - 1 acre',1992,1428,B0J
+374900,3,1,House,2,'1 - 3 acres',2015,924,B0M
+450000,1,2,House,1,'under 1/2 acre',1976,1609,B2W
+249900,1,1,House,1,'under 1/2 acre',?,1090,B3Z
+335000,2,2,House,1,'under 1/2 acre',1976,1716,B2V
+649900,3,2,House,1,'1 - 3 acres',2019,1655,B4E
+409000,3,2,House,1,'1 - 3 acres',2011,2200,B3E
+685000,4,3,House,1,'under 1/2 acre',2009,2998,B2W
+489000,2,2,House,2,?,2015,1365,B0N
+245000,4,2,House,2,'under 1/2 acre',1955,2000,B4N
+2490000,5,5,House,3,'under 1/2 acre',1924,5738,B3H
+549900,3,3,House,2,'1/2 - 1 acre',1918,2334,B3V
+489900,3,2,House,1,'under 1/2 acre',1949,1362,B3L
+99900,3,1,'Mobile Home',1,'1/2 - 1 acre',?,850,B4V
+599900,4,3,House,2,'1/2 - 1 acre',1980,2263,B4N
+398900,3,2,House,1,'1 - 3 acres',?,1300,B0P
+319900,4,3,House,2,'1/2 - 1 acre',1987,1720,B4E
+299900,3,2,House,1,'under 1/2 acre',1963,1242,B4E
+335000,3,2,House,1,'under 1/2 acre',1971,1802,B4C
+189900,3,1,House,1,'1/2 - 1 acre',1969,864,B0N
+125000,2,1,'Mobile Home',1,'1/2 - 1 acre',1970,604,B0N
+475000,4,2,House,2,'under 1/2 acre',1953,1671,B3N
+349900,3,3,House,2,'under 1/2 acre',2001,1889,B2V
+624900,4,2,House,2,'under 1/2 acre',1953,1728,B3K
+599900,4,2,House,2,'under 1/2 acre',1952,2020,B3H
+362000,3,1,House,2,'under 1/2 acre',?,1550,B3T
+649000,4,4,House,1,'1/2 - 1 acre',2002,3484,B2Z
+598000,3,2,House,1,'1 - 3 acres',?,1712,B4V
+374900,4,3,House,1,'1 - 3 acres',2008,2100,B0N
+349999,4,2,House,1,'under 1/2 acre',1972,1887,B0S
+224900,2,1,House,1,'1 - 3 acres',1994,1144,B0N
+299000,4,1,House,2,'3 - 10 acres',1994,1583,B0S
+465000,4,3,House,2,'1/2 - 1 acre',2008,2312,B0P
+399900,3,2,House,2,'under 1/2 acre',1994,1872,B0P
+625000,4,4,House,2,'under 1/2 acre',2019,2688,B4E
+575000,5,3,House,1,'1 - 3 acres',1991,2660,B2T
+389900,3,3,House,2,'1/2 - 1 acre',1994,2021,B6L
+150000,4,1,House,2,'1 - 3 acres',1911,1263,B0H
+849900,5,2,House,1,'under 1/2 acre',?,2622,B3H
+469900,2,2,House,1,'under 1/2 acre',2000,1485,B2W
+679900,5,4,House,2,'under 1/2 acre',1991,3737,B2V
+449900,3,4,'Row / Townhouse',2,'under 1/2 acre',2008,2068,B2W
+449900,4,3,House,1,'under 1/2 acre',?,1710,B2W
+399900,4,4,House,2,'under 1/2 acre',1992,2149,B4A
+229900,3,2,House,2,'1 - 3 acres',1945,979,B0P
+449900,5,2,House,1,'under 1/2 acre',1975,1850,B4A
+588888,8,5,House,2,'under 1/2 acre',1980,3700,B2T
+599900,3,2,House,1,'1 - 3 acres',2020,1686,B2S
+239900,3,1,House,1,'under 1/2 acre',?,768,B4E
+269900,4,2,House,2,'under 1/2 acre',?,1853,B0N
+209900,2,1,House,1,'under 1/2 acre',1967,960,B3A
+249000,4,1,House,2,'1/2 - 1 acre',1957,1691,B0E
+3790000,4,5,House,2,'1 - 3 acres',?,6000,B3P
+645000,4,3,House,1,'1 - 3 acres',2011,2784,B2T
+209900,3,2,'Mobile Home',1,'under 1/2 acre',2018,1088,B0M
+169900,3,1,House,2,'1 - 3 acres',?,1083,B0N
+249900,3,2,House,2,'under 1/2 acre',1866,1612,B0N
+189900,3,1,House,2,'under 1/2 acre',1932,1275,B0M
+949000,5,5,House,2,'10 - 49 acres',2016,3590,B0N
+3999900,5,6,House,2,'under 1/2 acre',2022,5268,B4A
+449900,2,2,Apartment,1,?,2011,1255,B2W
+929000,4,2,House,2,'1 - 3 acres',2018,2614,B0J
+489900,3,4,House,2,'under 1/2 acre',2018,1864,B3P
+299900,3,2,House,1,'1/2 - 1 acre',2001,1440,B3G
+279900,3,1,'Row / Townhouse',2,'under 1/2 acre',1978,1200,B2W
+395000,4,2,House,2,'1 - 3 acres',1992,1944,B2S
+449000,3,2,House,1,'1 - 3 acres',1995,2288,B6L
+149999,3,1,House,2,'under 1/2 acre',1915,960,B2H
+129000,2,1,'Mobile Home',1,?,1989,840,B2N
+899000,4,4,House,2,'1 - 3 acres',2019,3300,B2T
+599900,4,3,House,1,'1 - 3 acres',?,3059,B2R
+649900,3,2,House,2,'under 1/2 acre',?,1444,B0N
+309000,3,2,'Row / Townhouse',2,?,1973,1602,B3M
+399000,5,2,House,1,'1 - 3 acres',1976,1440,B2Z
+549900,4,4,House,2,'under 1/2 acre',2012,2338,B3N
+115000,2,1,House,1,'1 - 3 acres',2002,877,B4V
+1595000,6,4,House,2,'under 1/2 acre',2003,3960,B3H
+799000,2,2,Apartment,1,?,2018,1140,B3H
+595000,4,4,House,2,'under 1/2 acre',1985,3964,B2X
+399900,3,2,House,2,'1 - 3 acres',1986,1819,B0N
+274700,3,3,House,2,'1 - 3 acres',?,1746,B0K
+140000,3,1,House,2,'under 1/2 acre',?,1056,B2N
+699000,3,3,House,1,'1 - 3 acres',?,3221,B4G
+369900,3,2,House,1,'1/2 - 1 acre',1990,1764,B0P
+349000,3,3,House,1,'under 1/2 acre',2004,2028,B4R
+309900,3,2,House,1,'under 1/2 acre',2000,1536,B4E
+119000,3,1,'Mobile Home',1,Unknown,1997,896,B4E
+1330000,4,4,House,2,'under 1/2 acre',?,3700,B3H
+329900,1,1,Apartment,1,'under 1/2 acre',2008,720,B3K
+519900,4,3,House,2,'under 1/2 acre',1987,2644,B4A
+369900,3,2,House,1,'under 1/2 acre',2007,1428,B4C
+429000,5,3,House,2,'under 1/2 acre',1988,2786,B4E
+359900,3,2,House,1,'under 1/2 acre',1980,1900,B0J
+219900,4,2,House,2,'under 1/2 acre',1942,2076,B4N
+179900,2,1,House,1,'3 - 10 acres',1970,800,B0N
+279900,4,2,House,1,'under 1/2 acre',2002,1360,B2V
+199900,2,1,House,1,'1 - 3 acres',1989,784,B0J
+149900,2,1,House,1,'under 1/2 acre',?,704,B0N
+209900,2,1,House,1,'under 1/2 acre',?,1134,B0K
+239900,4,1,House,1,'1/2 - 1 acre',2006,2003,B0J
+349900,5,2,House,2,'3 - 10 acres',1998,2466,B0J
+379900,4,2,House,2,'1 - 3 acres',2004,1998,B0J
+149500,2,1,House,1,'under 1/2 acre',1964,595,B2N
+199900,2,2,'Mobile Home',1,?,2008,1152,B4V
+649000,3,1,House,2,'1 - 3 acres',1872,1700,B0J
+375000,4,2,House,1,'under 1/2 acre',1973,1219,B2V
+449000,4,3,House,2,'under 1/2 acre',?,1532,B3R
+299900,3,2,House,2,'under 1/2 acre',1976,1445,B2V
+634900,4,4,'Row / Townhouse',3,'under 1/2 acre',2019,2475,B3M
+659000,4,4,House,2,'under 1/2 acre',2021,2748,B3R
+118000,2,1,House,1,'under 1/2 acre',?,564,B6L
+259900,3,2,House,2,'under 1/2 acre',?,1416,B2N
+425000,3,3,House,2,'under 1/2 acre',2000,1689,B4E
+584900,2,2,Apartment,1,?,2007,1580,B4A
+254900,2,1,House,1,'under 1/2 acre',2020,884,B2N
+749900,2,3,'Row / Townhouse',2,'under 1/2 acre',2021,1141,B3H
+2599000,5,4,House,2,'1/2 - 1 acre',2012,7317,B6L
+189000,6,2,House,2,'under 1/2 acre',?,1250,B0E
+299900,2,1,House,1,'1 - 3 acres',1988,1008,B0N
+399900,3,1,House,1,'under 1/2 acre',2003,1744,B4C
+235000,2,1,House,2,'1 - 3 acres',1952,1448,B4N
+287500,2,2,House,1,'3 - 10 acres',?,1320,B0P
+880000,2,2,House,1,'under 1/2 acre',1950,1971,B2X
+399900,4,2,House,1,'under 1/2 acre',2001,2113,B3G
+329900,3,2,House,2,'under 1/2 acre',1950,1424,B3T
+239900,3,2,House,1,'1 - 3 acres',1975,2461,B0M
+359000,3,1,House,2,'under 1/2 acre',1902,1344,B0J
+299500,3,2,House,1,'under 1/2 acre',1969,1600,B2W
+999999,3,1,House,1,'10 - 49 acres',2005,1000,B4P
+2395000,3,5,House,2,'under 1/2 acre',1955,3839,B3H
+649900,4,4,House,3,'under 1/2 acre',2021,2546,B3N
+299900,3,2,'Row / Townhouse',2,'under 1/2 acre',1980,1798,B3M
+759000,4,3,House,1,'100+ acres',1988,2840,B0K
+240000,4,1,House,2,'1/2 - 1 acre',?,1368,B0M
+399900,3,2,House,1,'under 1/2 acre',?,1560,B0N
+850000,8,4,House,1,'under 1/2 acre',2017,4600,B0P
+689900,3,2,House,1,'3 - 10 acres',2008,2073,B4P
+237500,2,1,House,1,'under 1/2 acre',1972,1081,B2N
+385000,4,3,House,1,'under 1/2 acre',?,2700,B0P
+349000,3,2,House,1,'1 - 3 acres',1996,1838,B0P
+224900,2,1,Apartment,1,?,1976,748,B3A
+194900,3,2,House,2,'under 1/2 acre',?,1522,B0K
+429900,6,3,House,2,'under 1/2 acre',2005,2250,B3R
+299900,2,1,House,1,'under 1/2 acre',1969,790,B3R
+750000,3,3,House,1,'1/2 - 1 acre',2021,1704,B4R
+459900,3,2,House,1,'under 1/2 acre',?,1330,B0N
+329900,2,2,House,1,'under 1/2 acre',1970,1920,B4C
+400000,3,1,House,1,'1 - 3 acres',2013,1728,B0P
+274500,2,1,House,1,'1/2 - 1 acre',1992,1587,B6L
+549000,3,3,House,1,'1/2 - 1 acre',1988,2160,B2T
+749000,4,3,House,2,'1 - 3 acres',2017,2534,B4B
+389000,3,2,House,1,'under 1/2 acre',1986,1721,B4C
+599900,5,3,House,1,'under 1/2 acre',1969,2596,B3A
+599900,4,4,House,2,'under 1/2 acre',2011,2824,B2W
+139900,2,0,House,2,'1/2 - 1 acre',?,753,B0J
+575000,3,4,House,2,'under 1/2 acre',2020,1950,B3P
+950000,4,5,House,2,'1/2 - 1 acre',?,3850,B4R
+239900,3,1,House,1,'under 1/2 acre',1995,1176,B2N
+289900,4,2,House,2,'under 1/2 acre',?,1525,B0P
+229900,3,2,House,3,'1 - 3 acres',?,2018,B0N
+2099000,4,4,House,2,'1 - 3 acres',?,3645,B3Z
+829900,3,3,House,2,'under 1/2 acre',1917,1730,B3H
+399900,2,2,House,1,'under 1/2 acre',2021,1340,B4E
+379900,3,2,House,1,'under 1/2 acre',1955,1403,B4A
+329900,4,2,House,1,'under 1/2 acre',1984,2025,B4C
+574900,4,2,House,1,'3 - 10 acres',1997,2310,B0P
+949000,3,2,House,2,'1 - 3 acres',1872,1580,B0J
+449900,3,4,'Row / Townhouse',2,'under 1/2 acre',2008,2178,B2Y
+99900,2,1,House,1,'3 - 10 acres',?,840,B0N
+499900,1,1,Apartment,1,?,2018,625,B3H
+400000,4,1,House,1,'under 1/2 acre',1956,2275,B2X
+699900,4,4,House,2,Unknown,?,3395,B0N
+439900,5,2,House,1,'under 1/2 acre',1964,1924,B3T
+929000,4,4,House,2,'1/2 - 1 acre',2005,2727,B2Z
+219900,4,2,House,2,'under 1/2 acre',1977,1896,B0K
+174900,4,1,House,1,'under 1/2 acre',1971,1520,B9A
+429000,5,3,House,1,'1 - 3 acres',2006,1800,B2G
+499900,5,3,House,1,'3 - 10 acres',2011,2548,B6L
+339000,4,2,House,1,'under 1/2 acre',1998,1599,B0J
+575000,4,3,House,1,'3 - 10 acres',2021,2053,B4B
+479900,4,2,House,1,'under 1/2 acre',1967,2033,B3M
+282500,3,1,House,1,'under 1/2 acre',1978,1440,B3G
+999900,9,4,House,2,'under 1/2 acre',1974,2572,B3H
+499900,3,4,House,2,'under 1/2 acre',2005,2078,B4E
+104900,4,1,House,2,'1 - 3 acres',1904,?,B0M
+235000,6,2,House,1,'1 - 3 acres',?,1747,B0M
+350000,4,2,House,1,'under 1/2 acre',1969,1898,B3W
+549900,4,4,House,2,'under 1/2 acre',1999,2568,B2W
+575000,4,4,House,2,'under 1/2 acre',2013,2446,B3P
+449900,4,3,House,2,'1/2 - 1 acre',2015,2182,B0P
+349900,4,2,House,1,'under 1/2 acre',1980,2300,B4N
+335000,4,2,House,1,'under 1/2 acre',1968,1515,B4N
+989900,4,4,House,3,'under 1/2 acre',?,2900,B3T
+449900,3,3,House,1,'under 1/2 acre',1982,2446,B2V
+300000,2,1,Apartment,2,?,1986,1130,B3M
+409900,3,3,'Row / Townhouse',2,'under 1/2 acre',1993,2098,B2W
+365000,2,2,Apartment,1,?,1991,1100,B3A
+645000,3,2,?,2,'under 1/2 acre',2019,1319,B3K
+169900,4,2,House,2,'under 1/2 acre',1921,1154,B2H
+95000,2,1,House,1,'1 - 3 acres',1940,967,B0M
+74000,2,1,House,2,'under 1/2 acre',1923,864,B0E
+249900,4,2,House,2,'3 - 10 acres',?,1636,B0K
+729900,4,4,House,2,'1/2 - 1 acre',?,3939,B4A
+349900,4,3,House,2,'under 1/2 acre',1987,1866,B4A
+599900,3,4,'Row / Townhouse',2,'under 1/2 acre',2011,2197,B4B
+899900,4,4,House,2,'1 - 3 acres',2016,3479,B3T
+449900,2,3,'Row / Townhouse',2,'3 - 10 acres',2014,1755,B3G
+375000,3,2,House,2,'under 1/2 acre',1952,1530,B2W
+539000,3,3,House,2,'1/2 - 1 acre',2003,2045,B3Z
+257000,3,2,'Row / Townhouse',2,'under 1/2 acre',?,1450,B3P
+310000,4,2,House,1,'under 1/2 acre',2004,1600,B0P
+469000,4,2,House,2,'1/2 - 1 acre',1929,1650,B0T
+399900,4,2,House,1,'1/2 - 1 acre',1989,1976,B4B
+364900,3,2,House,2,'1 - 3 acres',1954,1668,B0J
+259900,4,2,House,1,'1/2 - 1 acre',1989,1896,B0J
+450000,3,2,House,1,'under 1/2 acre',2014,2744,B0J
+459000,2,2,House,2,'under 1/2 acre',1943,1292,B3P
+239000,1,1,Apartment,1,?,1991,722,B3K
+289900,2,1,House,2,'under 1/2 acre',1940,1196,B2Y
+157000,3,1,House,2,'1 - 3 acres',?,1300,B0P
+269900,4,2,House,1,'under 1/2 acre',1976,1605,B4N
+99000,2,1,'Mobile Home',1,'under 1/2 acre',?,694,B4N
+415900,3,3,House,2,'1 - 3 acres',2015,1720,B0P
+525000,5,4,House,2,'under 1/2 acre',1985,3374,B2V
+459900,4,2,House,1,'1 - 3 acres',2009,2002,B3Z
+375000,3,3,House,1,'under 1/2 acre',2001,2200,B4R
+499000,3,2,House,1,'under 1/2 acre',2010,1200,B2G
+549900,2,1,House,1,'3 - 10 acres',1975,1128,B0K
+549900,3,1,House,2,'1 - 3 acres',2004,1600,B0K
+499900,2,2,House,1,'under 1/2 acre',1952,877,B3K
+585000,4,4,House,2,'under 1/2 acre',2011,2564,B3R
+749000,3,2,House,1,'1 - 3 acres',2020,1824,B3Z
+349900,3,1,House,1,'under 1/2 acre',?,1128,B2W
+219900,2,1,House,1,'under 1/2 acre',?,600,B3A
+285000,2,1,House,1,'under 1/2 acre',2008,896,B2H
+169900,3,1,'Mobile Home',1,'under 1/2 acre',2000,1152,B3E
+999900,6,4,House,2,'1 - 3 acres',1993,4241,B4B
+939000,4,4,House,2,'under 1/2 acre',2020,2976,B4B
+474900,3,4,House,2,'under 1/2 acre',2011,1950,B4E
+799900,4,4,House,2,'under 1/2 acre',2020,2895,B4A
+249000,2,2,House,2,'3 - 10 acres',?,970,B0P
+420000,3,2,House,2,'1 - 3 acres',1982,2468,B2H
+299900,1,1,Apartment,1,'1/2 - 1 acre',1992,695,B3J
+349000,3,2,House,2,'under 1/2 acre',1975,1377,B2W
+284500,3,2,House,3,'under 1/2 acre',1959,1558,B0K
+599000,3,3,House,2,'1 - 3 acres',2008,2435,B0N
+199900,1,1,House,1,'under 1/2 acre',?,1400,B4C
+599900,5,3,House,1,'1/2 - 1 acre',1994,2820,B4C
+479900,3,2,House,1,'3 - 10 acres',2012,1287,B0P
+529900,3,3,House,1,'under 1/2 acre',1978,1763,B4A
+424900,5,2,House,1,'under 1/2 acre',1977,1960,B2T
+439900,3,2,House,1,'1 - 3 acres',?,2430,B2Z
+799900,4,4,House,2,'under 1/2 acre',?,2589,B4B
+225000,4,1,House,1,'1 - 3 acres',1972,1248,B0S
+279900,4,2,House,2,'under 1/2 acre',1963,1832,B9A
+459900,3,2,House,1,'under 1/2 acre',?,1330,B0N
+349900,6,3,House,1,'under 1/2 acre',1972,2986,B6L
+1252500,3,3,Apartment,1,?,?,1770,B3J
+399900,3,2,House,1,'under 1/2 acre',1977,1300,B2W
+285000,3,3,House,1,'1/2 - 1 acre',1980,1725,B0T
+223800,4,2,House,2,'under 1/2 acre',?,1406,B2H
+429900,2,1,House,1,'10 - 49 acres',1998,1170,B3E
+299000,5,2,House,1,'under 1/2 acre',1966,2070,B2N
+279900,5,2,House,1,'1/2 - 1 acre',?,1646,B2N
+289900,2,1,House,1,'under 1/2 acre',1952,930,B0J
+269900,3,1,House,1,'10 - 49 acres',1968,1050,B0R
+348500,4,3,House,1,'under 1/2 acre',2020,2232,B2N
+229500,3,1,House,2,'1 - 3 acres',1835,1458,B0N
+299900,3,1,House,1,'1/2 - 1 acre',1968,1419,B3E
+599900,3,2,House,1,'1 - 3 acres',2016,1651,B2S
+649000,3,4,'Row / Townhouse',2,'under 1/2 acre',2005,2340,B4A
+279900,3,1,House,1,'1 - 3 acres',?,1450,B0P
+239000,4,2,House,2,'1 - 3 acres',?,2040,B0P
+145000,3,0,House,2,'1 - 3 acres',2017,847,B0J
+1299900,3,4,House,2,'1/2 - 1 acre',1995,3570,B3T
+449900,2,2,House,2,'10 - 49 acres',2017,1568,B0N
+199000,3,1,'Mobile Home',1,'50 - 100 acres',1996,1126,B0H
+225000,2,2,'Mobile Home',1,'under 1/2 acre',2010,896,B2G
+129900,3,1,House,2,'1 - 3 acres',1859,1800,B2S
+429900,3,3,House,2,'1/2 - 1 acre',1987,2044,B2T
+299500,5,2,House,2,'under 1/2 acre',1913,2800,B0S
+549000,6,2,House,3,'10 - 49 acres',1988,3320,B0K
+379900,3,2,House,1,'under 1/2 acre',1970,2280,B2N
+124500,2,2,House,1,'1/2 - 1 acre',1985,912,B6L
+239900,3,2,House,1,'under 1/2 acre',?,2184,B2N
+229900,3,2,House,1,'under 1/2 acre',?,1120,B0M
+359900,3,2,House,1,'under 1/2 acre',2004,1200,B4N
+299900,3,1,House,1,'under 1/2 acre',1962,1261,B2T
+469000,3,2,House,1,'under 1/2 acre',2012,1803,B4V
+3300000,5,5,House,2,'3 - 10 acres',2003,7290,B0J
+450000,2,2,Apartment,1,Unknown,1983,1050,B3L
+399000,6,2,House,1,'1/2 - 1 acre',1972,1534,B2G
+599900,3,3,House,2,'10 - 49 acres',1922,2428,B0N
+499000,3,3,House,1,'10 - 49 acres',2008,2220,B0K
+197000,2,1,House,1,'1 - 3 acres',1987,810,B0M
+229900,2,1,House,1,'1/2 - 1 acre',?,720,B0N
+709900,3,2,House,2,'1 - 3 acres',2019,2599,B0N
+489900,3,3,House,2,'under 1/2 acre',2000,2080,B3T
+369900,3,2,House,2,'1/2 - 1 acre',1975,2155,B0P
+696900,4,3,House,1,'1 - 3 acres',?,2488,B0N
+379900,3,2,House,1,'under 1/2 acre',1979,2170,B2G
+399900,3,2,House,2,'under 1/2 acre',?,1920,B4A
+324900,4,3,House,1,'under 1/2 acre',1994,2200,B0P
+189900,2,1,House,2,'under 1/2 acre',1941,938,B4N
+2000000,7,5,House,2,'under 1/2 acre',1918,3870,B3H
+889000,3,4,'Row / Townhouse',3,'under 1/2 acre',2006,2400,B3A
+415000,4,3,House,1,'under 1/2 acre',1995,2576,B0P
+259900,5,2,House,1,'1 - 3 acres',1972,1920,B4G
+359000,4,2,Duplex,1,'under 1/2 acre',1991,2100,B4N
